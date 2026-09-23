@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FreshMart — your neighbourhood grocery shop in Hyderabad. Farm-fresh fruits, vegetables, dairy and daily essentials delivered to your door.">
+  <title>FreshMart — Fresh Groceries Online | Hyderabad</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🥬</text></svg>">
+
+  <!-- ============================================================
+       FRESHMART — GROCERY SHOP WEBSITE
+       Built with pure HTML5 & CSS3 (no JavaScript)
+       ============================================================ -->
+    <!-- Stylesheet: all CSS lives in css/style.css -->
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body id="top">
+
+  <!-- ===== Announcement bar ===== -->
+  <div class="announce">
+    🚚 Free delivery on orders above <strong>₹499</strong> · Fresh stock arrives every morning at 7 AM
+  </div>
+
+  <!-- ===== Header ===== -->
+  <header class="header">
+    <div class="container header-inner">
+      <a class="logo" href="#top">
+        <span class="logo-mark" aria-hidden="true">🥬</span>
+        Fresh<em>Mart</em>
+      </a>
+
+      <!-- CSS-only hamburger: checkbox hack -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu">
+      <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">
+        <span class="bar"></span>
+      </label>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <ul>
+          <li><a href="#top" class="active">Home</a></li>
+          <li><a href="#categories">Categories</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#offers">Offers</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a class="cart-btn" href="#products" aria-label="Shopping cart, 3 items">
+          🛒
+          <span class="cart-count">3</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== Hero ===== -->
+    <section class="hero" id="home">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <span class="eyebrow">⭐ Trusted by 25,000+ Hyderabad families</span>
+          <h1>Fresh groceries,<br>delivered <span>farm to door</span>.</h1>
+          <p>
+            From crisp vegetables to daily essentials — everything your kitchen needs,
+            handpicked fresh every morning at honest neighbourhood prices.
+          </p>
+          <div class="hero-ctas">
+            <a class="btn btn-primary" href="#products">Shop Now →</a>
+            <a class="btn btn-outline" href="#categories">Browse Categories</a>
+          </div>
+          <ul class="hero-points">
+            <li>No hidden charges</li>
+            <li>45-minute delivery</li>
+            <li>Easy returns</li>
+          </ul>
+        </div>
+
+        <div class="hero-art" aria-hidden="true">
+          <div class="hero-blob"></div>
+          <div class="hero-basket">🧺</div>
+          <span class="fruit f1">🍓</span>
+          <span class="fruit f2">🥕</span>
+          <span class="fruit f3">🥦</span>
+          <span class="fruit f4">🍊</span>
+          <div class="hero-chip c1">🚚 <span>45-min delivery<small>across the city</small></span></div>
+          <div class="hero-chip c2">⭐ <span>4.9 / 5 rating<small>12,400+ reviews</small></span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== USP strip ===== -->
+    <section class="usp">
+      <div class="container usp-grid">
+        <div class="usp-item">
+          <span class="usp-icon" aria-hidden="true">🚚</span>
+          <div>
+            <h3>Free Delivery</h3>
+            <p>On every order above ₹499</p>
+          </div>
+        </div>
+        <div class="usp-item">
+          <span class="usp-icon" aria-hidden="true">🥬</span>
+          <div>
+            <h3>100% Farm Fresh</h3>
+            <p>Sourced daily from local farms</p>
+          </div>
+        </div>
+        <div class="usp-item">
+          <span class="usp-icon" aria-hidden="true">🏷️</span>
+          <div>
+            <h3>Best Price Promise</h3>
+            <p>Honest rates, every single day</p>
+          </div>
+        </div>
+        <div class="usp-item">
+          <span class="usp-icon" aria-hidden="true">🔄</span>
+          <div>
+            <h3>Easy Returns</h3>
+            <p>No-questions-asked, 7 days a week</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Categories ===== -->
+    <section class="section" id="categories">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Shop by aisle</span>
+          <h2>Explore Our Categories</h2>
+          <p>Everything neatly organised — walk through our digital aisles and find what you need in seconds.</p>
+        </div>
+
+        <div class="cat-grid">
+          <a class="cat-card" href="#products">
+            <span class="cat-emoji" aria-hidden="true">🍎</span>
+            <h3>Fruits</h3>
+            <span>150+ items</span>
+          </a>
+          <a class="cat-card" href="#products">
+            <span class="cat-emoji" aria-hidden="true">🥦</span>
+            <h3>Vegetables</h3>
+            <span>180+ items</span>
+          </a>
+          <a class="cat-card" href="#products">
+            <span class="cat-emoji" aria-hidden="true">🥛</span>
+            <h3>Dairy &amp; Eggs</h3>
+            <span>90+ items</span>
+          </a>
+          <a class="cat-card" href="#products">
+            <span class="cat-emoji" aria-hidden="true">🍞</span>
+            <h3>Bakery</h3>
+            <span>60+ items</span>
+          </a>
+          <a class="cat-card" href="#products">
+            <span class="cat-emoji" aria-hidden="true">🍪</span>
+            <h3>Snacks</h3>
+            <span>220+ items</span>
+          </a>
+          <a class="cat-card" href="#products">
+            <span class="cat-emoji" aria-hidden="true">🧴</span>
+            <h3>Household</h3>
+            <span>140+ items</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Products ===== -->
+    <section class="section products" id="products">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Today's picks</span>
+          <h2>Fresh Arrivals</h2>
+          <p>Handpicked this morning — quality-checked, fairly priced and ready for your kitchen.</p>
+        </div>
+
+        <div class="product-grid">
+
+          <article class="product-card">
+            <div class="product-media tint-1">
+              <span aria-hidden="true">🍎</span>
+              <span class="badge badge-sale">Sale</span>
+              <a class="wish" href="#" aria-label="Add Red Apples to wishlist">♥</a>
+            </div>
+            <div class="product-body">
+              <span class="product-cat">Fruits</span>
+              <h3>Red Apples</h3>
+              <span class="product-unit">1 kg pack</span>
+              <div class="price-row">
+                <span class="price">₹119</span>
+                <span class="price-old">₹149</span>
+                <span class="price-off">20% off</span>
+              </div>
+              <button class="add-btn" type="button">Add to Cart 🛒</button>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-media tint-2">
+              <span aria-hidden="true">🥦</span>
+              <span class="badge badge-organic">Organic</span>
+              <a class="wish" href="#" aria-label="Add Broccoli to wishlist">♥</a>
+            </div>
+            <div class="product-body">
+              <span class="product-cat">Vegetables</span>
+              <h3>Fresh Broccoli</h3>
+              <span class="product-unit">500 g</span>
+              <div class="price-row">
+                <span class="price">₹65</span>
+              </div>
+              <button class="add-btn" type="button">Add to Cart 🛒</button>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-media tint-4">
+              <span aria-hidden="true">🥛</span>
+              <a class="wish" href="#" aria-label="Add Fresh Milk to wishlist">♥</a>
+            </div>
+            <div class="product-body">
+              <span class="product-cat">Dairy &amp; Eggs</span>
+              <h3>Toned Milk</h3>
+              <span class="product-unit">1 L pouch</span>
+              <div class="price-row">
+                <span class="price">₹58</span>
+              </div>
+              <button class="add-btn" type="button">Add to Cart 🛒</button>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-media tint-3">
+              <span aria-hidden="true">🍞</span>
+              <span class="badge badge-new">New</span>
+              <a class="wish" href="#" aria-label="Add Whole Wheat Bread to wishlist">♥</a>
+            </div>
+            <div class="product-body">
+              <span class="product-cat">Bakery</span>
+              <h3>Whole Wheat Bread</h3>
+              <span class="product-unit">400 g loaf</span>
+              <div class="price-row">
+                <span class="price">₹45</span>
+              </div>
+              <button class="add-btn" type="button">Add to Cart 🛒</button>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-media tint-2">
+              <span aria-hidden="true">🥑</span>
+              <span class="badge badge-organic">Organic</span>
+              <a class="wish" href="#" aria-label="Add Avocados to wishlist">♥</a>
+            </div>
+            <div class="product-body">
+              <span class="product-cat">Fruits</span>
+              <h3>Hass Avocado</h3>
+              <span class="product-unit">Pack of 2</span>
+              <div class="price-row">
+                <span class="price">₹180</span>
+              </div>
+              <button class="add-btn" type="button">Add to Cart 🛒</button>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-media tint-1">
+              <span aria-hidden="true">🍫</span>
+              <span class="badge badge-sale">Sale</span>
+              <a class="wish" href="#" aria-label="Add Dark Chocolate to wishlist">♥</a>
+            </div>
+            <div class="product-body">
+              <span class="product-cat">Snacks</span>
+              <h3>Dark Chocolate 70%</h3>
+              <span class="product-unit">100 g bar</span>
+              <div class="price-row">
+                <span class="price">₹79</span>
+                <span class="price-old">₹99</span>
+                <span class="price-off">20% off</span>
+              </div>
+              <button class="add-btn" type="button">Add to Cart 🛒</button>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-media tint-3">
+              <span aria-hidden="true">🥚</span>
+              <a class="wish" href="#" aria-label="Add Farm Eggs to wishlist">♥</a>
+            </div>
+            <div class="product-body">
+              <span class="product-cat">Dairy &amp; Eggs</span>
+              <h3>Farm Eggs</h3>
+              <span class="product-unit">Tray of 12</span>
+              <div class="price-row">
+                <span class="price">₹90</span>
+              </div>
+              <button class="add-btn" type="button">Add to Cart 🛒</button>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-media tint-4">
+              <span aria-hidden="true">🍊</span>
+              <a class="wish" href="#" aria-label="Add Oranges to wishlist">♥</a>
+            </div>
+            <div class="product-body">
+              <span class="product-cat">Fruits</span>
+              <h3>Nagpur Oranges</h3>
+              <span class="product-unit">1 kg pack</span>
+              <div class="price-row">
+                <span class="price">₹85</span>
+              </div>
+              <button class="add-btn" type="button">Add to Cart 🛒</button>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Offer banner ===== -->
+    <section class="offer" id="offers">
+      <div class="container">
+        <div class="offer-inner">
+          <div class="offer-copy">
+            <span class="offer-tag">Limited time only</span>
+            <h2>Weekend Mega Sale on Fresh Produce</h2>
+            <p>
+              Stock up on fruits, vegetables and greens — up to 30% off this weekend only.
+              Use the coupon below at checkout.
+            </p>
+            <a class="btn btn-light" href="#products">Shop the Sale</a>
+            <p class="code" style="margin:18px 0 0;">Coupon code: <strong>FRESH30</strong></p>
+          </div>
+
+          <div class="offer-side">
+            <div class="offer-percent">30%<small>OFF · THIS WEEKEND</small></div>
+            <div class="countdown" role="timer" aria-label="Sale ends in">
+              <div class="time-box"><span class="num">02</span><span class="lab">Days</span></div>
+              <div class="time-box"><span class="num">08</span><span class="lab">Hours</span></div>
+              <div class="time-box"><span class="num">45</span><span class="lab">Mins</span></div>
+              <div class="time-box"><span class="num">30</span><span class="lab">Secs</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== About / shop info ===== -->
+    <section class="section" id="about">
+      <div class="container about-inner">
+        <div class="about-art" aria-hidden="true">
+          <div class="about-card big">🥕</div>
+          <div class="about-card small">🍇</div>
+          <div class="about-exp">
+            <strong>12+</strong>
+            <span>Years serving<br>the neighbourhood</span>
+          </div>
+        </div>
+
+        <div class="about-copy">
+          <span class="eyebrow">Our story</span>
+          <h2>The neighbourhood grocery shop, now online</h2>
+          <p>
+            FreshMart started in 2014 as a small corner store in Gachibowli. Today we
+            serve thousands of families across Hyderabad — with the same promise we began
+            with: fresh produce, fair prices and a smile with every order.
+          </p>
+          <ul class="check-list">
+            <li>Farm-fresh produce sourced every morning from local farmers</li>
+            <li>Strict quality and hygiene checks on every single item</li>
+            <li>Easy, no-questions-asked returns within 7 days</li>
+            <li>Secure payments — UPI, cards and cash on delivery</li>
+          </ul>
+          <a class="btn btn-primary" href="#contact">Visit Our Store</a>
+
+          <div class="stats-row">
+            <div class="stat"><strong>12+</strong><span>Years of service</span></div>
+            <div class="stat"><strong>8k+</strong><span>Products stocked</span></div>
+            <div class="stat"><strong>25k+</strong><span>Happy customers</span></div>
+            <div class="stat"><strong>45m</strong><span>Avg. delivery</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Testimonials ===== -->
+    <section class="section" id="testimonials" style="padding-top: 0;">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Customer love</span>
+          <h2>What Our Shoppers Say</h2>
+          <p>Real feedback from families who shop with us every week.</p>
+        </div>
+
+        <div class="testi-grid">
+          <article class="testi-card">
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote>
+              "The vegetables genuinely taste like they came from a farm. Delivery is
+              always on time and the prices beat every app I've used."
+            </blockquote>
+            <div class="testi-user">
+              <span class="avatar">PS</span>
+              <div>
+                <strong>Priya Sharma</strong>
+                <span>Gachibowli</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="testi-card">
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote>
+              "I order my weekly groceries in five minutes and they reach before my
+              chai gets cold. Their returns policy is refreshingly honest."
+            </blockquote>
+            <div class="testi-user">
+              <span class="avatar">RV</span>
+              <div>
+                <strong>Rahul Verma</strong>
+                <span>Kondapur</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="testi-card">
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote>
+              "FreshMart has been our family store for years. Now that it's online,
+              my parents find it just as easy — that says everything."
+            </blockquote>
+            <div class="testi-user">
+              <span class="avatar">SR</span>
+              <div>
+                <strong>Sneha Reddy</strong>
+                <span>Madhapur</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Get in touch</span>
+          <h2>Visit or Contact Our Shop</h2>
+          <p>Drop by the store, give us a call, or send a message — we'd love to hear from you.</p>
+        </div>
+
+        <div class="contact-inner">
+          <div>
+            <div class="info-grid">
+              <div class="info-card">
+                <span class="ico" aria-hidden="true">📍</span>
+                <h3>Store Address</h3>
+                <p>Shop 12, Green Meadows Colony,<br>Gachibowli, Hyderabad,<br>Telangana 500032</p>
+              </div>
+              <div class="info-card">
+                <span class="ico" aria-hidden="true">📞</span>
+                <h3>Call Us</h3>
+                <p>+91 98765 43210<br>+91 40 2345 6789</p>
+              </div>
+              <div class="info-card">
+                <span class="ico" aria-hidden="true">✉️</span>
+                <h3>Email</h3>
+                <p>hello@freshmart.in<br>orders@freshmart.in</p>
+              </div>
+              <div class="info-card">
+                <span class="ico" aria-hidden="true">🛵</span>
+                <h3>Delivery</h3>
+                <p>Free above ₹499<br>Across western Hyderabad</p>
+              </div>
+            </div>
+
+            <table class="hours-table">
+              <caption>🕒 Opening Hours</caption>
+              <tr><td>Monday – Friday</td><td class="open">8:00 AM – 10:00 PM</td></tr>
+              <tr><td>Saturday</td><td class="open">8:00 AM – 10:30 PM</td></tr>
+              <tr><td>Sunday</td><td class="open">9:00 AM – 9:00 PM</td></tr>
+              <tr><td>Public Holidays</td><td>9:00 AM – 2:00 PM</td></tr>
+            </table>
+          </div>
+
+          <form class="contact-form" action="#" method="post">
+            <h3>Send Us a Message</h3>
+            <p>Fill in the form and our team will get back to you within a few hours.</p>
+
+            <div class="form-row">
+              <div class="field">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="e.g. Ananya Rao" required>
+              </div>
+              <div class="field">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="+91 90000 00000" required>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            </div>
+
+            <div class="field">
+              <label for="message">Your Message</label>
+              <textarea id="message" name="message" placeholder="How can we help you?" required></textarea>
+            </div>
+
+            <button class="btn btn-primary" type="submit" style="width:100%; justify-content:center;">
+              Send Message ✉️
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Newsletter ===== -->
+    <section class="newsletter">
+      <div class="container">
+        <div class="newsletter-inner">
+          <div>
+            <h3>📬 Fresh deals, straight to your inbox</h3>
+            <p>Subscribe for weekly offers, seasonal picks and recipes — no spam, ever.</p>
+          </div>
+          <form class="news-form" action="#" method="post">
+            <input type="email" name="newsletter" placeholder="Enter your email address" aria-label="Email address" required>
+            <button class="btn btn-primary" type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-about">
+          <a class="logo" href="#top">
+            <span class="logo-mark" aria-hidden="true">🥬</span>
+            Fresh<em>Mart</em>
+          </a>
+          <p>
+            Your neighbourhood grocery shop in Hyderabad since 2014 —
+            fresh, honest and always around the corner.
+          </p>
+          <div class="socials">
+            <a href="#" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-7h2.4l.4-3h-2.8V9.1c0-.9.3-1.5 1.6-1.5h1.3V4.9c-.3 0-1.1-.1-2.1-.1-2.1 0-3.6 1.3-3.6 3.7V11H8.3v3h2.4v7h2.8z"/></svg>
+            </a>
+            <a href="#" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="4.5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"/></svg>
+            </a>
+            <a href="#" aria-label="X (Twitter)">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19"/></svg>
+            </a>
+            <a href="#" aria-label="YouTube">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.6 7.2a2.5 2.5 0 0 0-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4A2.5 2.5 0 0 0 2.4 7.2 26 26 0 0 0 2 12a26 26 0 0 0 .4 4.8 2.5 2.5 0 0 0 1.8 1.8c1.6.4 7.8.4 7.8.4s6.2 0 7.8-.4a2.5 2.5 0 0 0 1.8-1.8A26 26 0 0 0 22 12a26 26 0 0 0-.4-4.8zM10 15.2V8.8L15.5 12 10 15.2z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#top">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#offers">Offers</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Categories</h4>
+          <ul class="footer-links">
+            <li><a href="#products">Fruits</a></li>
+            <li><a href="#products">Vegetables</a></li>
+            <li><a href="#products">Dairy &amp; Eggs</a></li>
+            <li><a href="#products">Bakery</a></li>
+            <li><a href="#products">Snacks</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Contact</h4>
+          <ul class="footer-contact">
+            <li><span class="fi" aria-hidden="true">📍</span> Shop 12, Green Meadows Colony, Gachibowli, Hyderabad 500032</li>
+            <li><span class="fi" aria-hidden="true">📞</span> +91 98765 43210</li>
+            <li><span class="fi" aria-hidden="true">✉️</span> hello@freshmart.in</li>
+            <li><span class="fi" aria-hidden="true">🕒</span> Open daily · 8 AM – 10 PM</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        © 2026 <strong>FreshMart</strong> · All rights reserved · Made with pure HTML5 &amp; CSS3
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <a class="to-top" href="#top" aria-label="Back to top">↑</a>
+
+</body>
+</html>
